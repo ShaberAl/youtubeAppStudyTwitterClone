@@ -19,6 +19,8 @@
 		2252C0DD2B10A9E800196C8E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2252C0DC2B10A9E800196C8E /* FirebaseStorageCombine-Community */; };
 		2252C0E02B10ABB700196C8E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252C0DF2B10ABB700196C8E /* OnboardingViewController.swift */; };
 		2252C0E22B10B15B00196C8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252C0E12B10B15B00196C8E /* RegisterViewController.swift */; };
+		2252C0E52B10BF8400196C8E /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252C0E42B10BF8400196C8E /* RegisterViewModel.swift */; };
+		2252C0E82B10C46400196C8E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252C0E72B10C46400196C8E /* AuthManager.swift */; };
 		228F8C0B2B0F4F7900159632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F8C0A2B0F4F7900159632 /* AppDelegate.swift */; };
 		228F8C0D2B0F4F7900159632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F8C0C2B0F4F7900159632 /* SceneDelegate.swift */; };
 		228F8C0F2B0F4F7900159632 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F8C0E2B0F4F7900159632 /* MainTabBarViewController.swift */; };
@@ -37,6 +39,8 @@
 		2252C0C92B10917800196C8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2252C0DF2B10ABB700196C8E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2252C0E12B10B15B00196C8E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2252C0E42B10BF8400196C8E /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		2252C0E72B10C46400196C8E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		228F8C072B0F4F7900159632 /* youtubeAppStudyTwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtubeAppStudyTwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228F8C0A2B0F4F7900159632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		228F8C0C2B0F4F7900159632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,22 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		2252C0E32B10BF6D00196C8E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2252C0E42B10BF8400196C8E /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2252C0E62B10C44F00196C8E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2252C0E72B10C46400196C8E /* AuthManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		228F8BFE2B0F4F7900159632 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 		228F8C092B0F4F7900159632 /* youtubeAppStudyTwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				2252C0E62B10C44F00196C8E /* Networking */,
+				2252C0E32B10BF6D00196C8E /* ViewModels */,
 				228F8C282B0F54C800159632 /* Views */,
 				228F8C1E2B0F510900159632 /* Controllers */,
 				228F8C0A2B0F4F7900159632 /* AppDelegate.swift */,
@@ -238,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				228F8C232B0F514200159632 /* SearchViewController.swift in Sources */,
+				2252C0E82B10C46400196C8E /* AuthManager.swift in Sources */,
 				228F8C0F2B0F4F7900159632 /* MainTabBarViewController.swift in Sources */,
 				228F8C0B2B0F4F7900159632 /* AppDelegate.swift in Sources */,
 				2252C0E22B10B15B00196C8E /* RegisterViewController.swift in Sources */,
@@ -245,6 +268,7 @@
 				228F8C0D2B0F4F7900159632 /* SceneDelegate.swift in Sources */,
 				228F8C212B0F513100159632 /* HomeViewController.swift in Sources */,
 				228F8C2D2B0F626700159632 /* ProfileViewController.swift in Sources */,
+				2252C0E52B10BF8400196C8E /* RegisterViewModel.swift in Sources */,
 				228F8C272B0F516700159632 /* DirectMessagesViewController.swift in Sources */,
 				22F056B32B0F74CE00A99249 /* ProfileTableViewHeader.swift in Sources */,
 				2252C0E02B10ABB700196C8E /* OnboardingViewController.swift in Sources */,
