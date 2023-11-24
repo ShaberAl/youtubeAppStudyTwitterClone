@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBvaAcWaGftqAUZWrXu2Q7_3KH1eosAvQM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140319769341</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shabernevalexandr.youtubeAppStudyTwitterClone</string>
+	<key>PROJECT_ID</key>
+	<string>appstudytwitterclone</string>
+	<key>STORAGE_BUCKET</key>
+	<string>appstudytwitterclone.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140319769341:ios:c25cff11d666516d6df494</string>
+</dict>
+</plist>
