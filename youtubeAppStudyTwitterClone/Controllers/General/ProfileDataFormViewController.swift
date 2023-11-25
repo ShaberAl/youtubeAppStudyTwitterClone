@@ -131,12 +131,12 @@ class ProfileDataFormViewController: UIViewController {
     
     @objc private func didUpdateDisplayName() {
         viewModel.displayName = displayNameTextField.text
-        viewModel.validateUserProfile()
+        viewModel.validateUserProfileForm()
     }
     
     @objc private func didUpdateUsername() {
         viewModel.username = usernameTextField.text
-        viewModel.validateUserProfile()
+        viewModel.validateUserProfileForm()
     }
     
     private func bindViews() {
@@ -144,6 +144,13 @@ class ProfileDataFormViewController: UIViewController {
         usernameTextField.addTarget(self, action: #selector(didUpdateUsername), for: .editingChanged)
         viewModel.$isFormValid.sink { [weak self] buttonState in
             self?.submitButton.isEnabled = buttonState
+        }
+        .store(in: &subscriptions)
+        
+        viewModel.$isOnboardingFinished.sink { [weak self] success in
+            if success {
+                self?.dismiss(animated: true)
+            }
         }
         .store(in: &subscriptions)
     }
@@ -241,6 +248,7 @@ extension ProfileDataFormViewController: UITextViewDelegate, UITextFieldDelegate
     
     func textViewDidChange(_ textView: UITextView) {
         viewModel.bio = textView.text
+        viewModel.validateUserProfileForm()
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -262,7 +270,7 @@ extension ProfileDataFormViewController: PHPickerViewControllerDelegate {
                     DispatchQueue.main.async {
                         self?.avatarPlaceholderImageView.image = image
                         self?.viewModel.imageData = image
-                        self?.viewModel.validateUserProfile()
+                        self?.viewModel.validateUserProfileForm()
                     }
                 }
             }
